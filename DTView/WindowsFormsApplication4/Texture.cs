@@ -16,20 +16,20 @@ namespace NextGen
         int[] skins = new int[6];
         //Path to resources
 
-        public Texture(String Top, String Bottom, String Front, String Back, String Left, String Right)
+        public Texture(String Top, String Bottom, String Front, String Back, String Left, String Right, int quality)
         {
             //Multi Textured Object
-            skins[0] = UploadTexture(Main.path[0] +" \\Resources\\" + Top + ".png");
-            skins[1] = UploadTexture(Main.path[0] + "\\Resources\\" + Bottom + ".png");
-            skins[2] = UploadTexture(Main.path[0] + "\\Resources\\" + Front + ".png");
-            skins[3] = UploadTexture(Main.path[0] + "\\Resources\\" + Back + ".png");
-            skins[4] = UploadTexture(Main.path[0] + "\\Resources\\" + Left + ".png");
-            skins[5] = UploadTexture(Main.path[0] + "\\Resources\\" + Right + ".png");
+            skins[0] = UploadTexture(Main.path[0] +" \\Resources\\" + quality.ToString() + "\\" + Top + ".png");
+            skins[1] = UploadTexture(Main.path[0] + "\\Resources\\" + quality.ToString() + "\\" + Bottom + ".png");
+            skins[2] = UploadTexture(Main.path[0] + "\\Resources\\" + quality.ToString() + "\\" + Front + ".png");
+            skins[3] = UploadTexture(Main.path[0] + "\\Resources\\" + quality.ToString() + "\\" + Back + ".png");
+            skins[4] = UploadTexture(Main.path[0] + "\\Resources\\" + quality.ToString() + "\\" + Left + ".png");
+            skins[5] = UploadTexture(Main.path[0] + "\\Resources\\" + quality.ToString() + "\\" + Right + ".png");
 
         }
-        public Texture(String Image)
+        public Texture(String Image, int quality)
         {//Single Textured Object
-            String temp = Main.path[0] + "\\Resources\\" + Image + ".png";
+            String temp = Main.path[0] + "\\Resources\\" + quality.ToString() + "\\" + Image + ".png";
             skins[0] = UploadTexture(temp);
             skins[1] = UploadTexture(temp);
             skins[2] = UploadTexture(temp);

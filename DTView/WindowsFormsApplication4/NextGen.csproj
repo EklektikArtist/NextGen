@@ -126,23 +126,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\CCube.png" />
-    <Content Include="Resources\Dirt.png" />
-    <Content Include="Resources\GDirt.png" />
-    <Content Include="Resources\Grass.png" />
-    <Content Include="Resources\GrassL.png" />
-    <Content Include="Resources\Leaves.png" />
-    <Content Include="Resources\MBrick.png" />
-    <Content Include="Resources\Sand.png" />
-    <Content Include="Resources\Slime.png" />
-    <Content Include="Resources\SSide.png" />
-    <Content Include="Resources\Stone.png" />
-    <Content Include="Resources\TRings.png" />
-    <Content Include="Resources\Trunk.png" />
-    <Content Include="Resources\Water.png" />
-    <Content Include="Resources\Wood.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
@@ -158,6 +141,27 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\64\CCube.png" />
+    <Content Include="Resources\64\Cloud.png" />
+    <Content Include="Resources\64\Dirt.png" />
+    <Content Include="Resources\64\DStone.png" />
+    <Content Include="Resources\64\GDirt.png" />
+    <Content Include="Resources\64\Grass.png" />
+    <Content Include="Resources\64\Lava.png" />
+    <Content Include="Resources\64\Leaves.png" />
+    <Content Include="Resources\64\MBrick.png" />
+    <Content Include="Resources\64\Sand.png" />
+    <Content Include="Resources\64\Select.png" />
+    <Content Include="Resources\64\Slime.png" />
+    <Content Include="Resources\64\SSide.png" />
+    <Content Include="Resources\64\Stone.png" />
+    <Content Include="Resources\64\TRings.png" />
+    <Content Include="Resources\64\Trunk.png" />
+    <Content Include="Resources\64\Void.png" />
+    <Content Include="Resources\64\Water.png" />
+    <Content Include="Resources\64\Wood.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

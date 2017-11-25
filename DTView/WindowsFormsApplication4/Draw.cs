@@ -253,7 +253,7 @@ namespace NextGen
             float rotSpeed = 0; //sets the angle of Rotation
             OpenTK.Vector3 rotAxis = Main.rotAxis;
             float[] TP = new float[6] { 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f };
-            Texture texture = new Texture("Wood");
+            Texture texture = new Texture("Wood", 64);
             Scheme Basic = Main.Colors[scheme];
             OpenTK.Vector3 distance = coor1.distanceTo(coor2);
             int xcount;

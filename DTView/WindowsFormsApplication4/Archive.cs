@@ -25,7 +25,7 @@ namespace NextGen
             Symbol = sym[0];
             if (tex.Contains("ALL"))
             {
-                Textr = new Texture(tex.Substring(0, tex.IndexOf(" ")));
+                Textr = new Texture(tex.Substring(0, tex.IndexOf(" ")), 64);
             }
             else
             {
@@ -36,7 +36,7 @@ namespace NextGen
                     tex = tex.Substring(tex.IndexOf(" ") + 1);
                 }
 
-                Textr = new Texture(text[0], text[1], text[2], text[3], text[4], text[5]);
+                Textr = new Texture(text[0], text[1], text[2], text[3], text[4], text[5], 64);
             }
 
 

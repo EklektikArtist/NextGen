@@ -82,8 +82,8 @@ namespace NextGen
             Draw.loaded = true;
             Draw.Load();
             popCB();
-            comboBox1.SelectedIndex = 0;
-            comboBox2.SelectedIndex = 0;
+            comboBox1.SelectedIndex = 1;
+            comboBox2.SelectedIndex = 1;
             Draw.UpdateImage(Width, Height); //Show First Frame
             timer1.Start(); // Begin Timer
         }

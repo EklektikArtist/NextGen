@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;   // For BitmMapData type
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -59,9 +60,9 @@ namespace NextGen
         public static void loadVar()
         {//LOAD VARIABLES FOR PROGRAM
             //alpha = alpha.setXYZ("<(123, 423, 0123)]>");
-
-            path[0] = "C:\\Users\\Micah Richards\\Dropbox\\Programming\\C#\\NextGen\\DTView\\WindowsFormsApplication4";
-
+            String local = Directory.GetCurrentDirectory();
+            local = local.Remove(local.LastIndexOf("\\"));
+            path[0] = local.Remove(local.LastIndexOf("\\"));
 
             //Create Archive
             List<String> SD = File.Read(path[0] + "\\Resources\\Archive.txt");
